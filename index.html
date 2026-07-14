@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Library Calls — Built-in Libraries</title>
+  <link rel="stylesheet" href="library-guide.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <p class="eyebrow">Python library calls · page 1</p>
+      <h1>Built-in Python libraries</h1>
+      <p class="intro">These libraries arrive with Python. You import the toolbox, then use a dot to call a tool from inside it.</p>
+      <nav class="page-switcher" aria-label="Library guide pages">
+        <a href="index.html" aria-current="page">Built into Python</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="how-to-read" aria-label="How to read each library card">
+      <div class="import-key"><strong>1 · IMPORT</strong><p>Bring the library into your program.</p></div>
+      <div class="call-key"><strong>2 · CALL</strong><p>Use a named tool from that library.</p></div>
+      <div class="does-key"><strong>3 · DOES</strong><p>See the job that tool performs.</p></div>
+    </section>
+
+    <p class="notice"><strong>The dot matters:</strong> in <code>random.randint()</code>, the dot means “go into <code>random</code> and use <code>randint</code>.”</p>
+
+    <section class="library-list" aria-label="Built-in Python libraries">
+      <article class="library-card">
+        <header class="card-heading"><h2>random</h2><span>Chance and random choices</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> random</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>number = random.<span class="code-name">randint</span>(<span class="code-value">1, 10</span>)</pre><p class="callout"><code>randint</code> means “random integer”.</p></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Chooses a whole number from 1 to 10. Both 1 and 10 are possible.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>math</h2><span>Extra mathematical tools</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> math</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>answer = math.<span class="code-name">sqrt</span>(<span class="code-value">81</span>)</pre><p class="callout"><code>sqrt</code> means “square root”.</p></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Finds the square root of 81, giving the answer <strong>9.0</strong>.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>datetime</h2><span>Dates and times</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> datetime</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>today = datetime.date.<span class="code-name">today</span>()</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Gets today’s date from the computer.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>statistics</h2><span>Averages and middle values</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> statistics</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>average = statistics.<span class="code-name">mean</span>([<span class="code-value">4, 7, 10</span>])</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Calculates the mean average of the numbers, giving <strong>7</strong>.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>pathlib</h2><span>Files and folders</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">from</span> pathlib <span class="code-import">import</span> Path</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>file = <span class="code-name">Path</span>(<span class="code-value">"notes.txt"</span>)
+exists = file.<span class="code-name">exists</span>()</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Represents a file path, then checks whether that file exists.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>json</h2><span>Structured text data</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> json</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>text = json.<span class="code-name">dumps</span>({<span class="code-value">"name": "Phil"</span>})</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Turns a Python dictionary into JSON text that can be saved or sent.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>csv</h2><span>Comma-separated table files</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">import</span> csv</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>reader = csv.<span class="code-name">reader</span>(file)</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Reads rows from an open CSV file. Each row is returned as a list.</p></div>
+        </div>
+      </article>
+
+      <article class="library-card">
+        <header class="card-heading"><h2>collections</h2><span>Special containers</span></header>
+        <div class="card-grid">
+          <div class="lane lane-import"><h3>IMPORT</h3><pre><span class="code-import">from</span> collections <span class="code-import">import</span> Counter</pre></div>
+          <div class="lane lane-call"><h3>CALL</h3><pre>counts = <span class="code-name">Counter</span>([<span class="code-value">"red", "blue", "red"</span>])</pre></div>
+          <div class="lane lane-does"><h3>DOES</h3><p>Counts repeated items. Here, <strong>red</strong> appears twice and <strong>blue</strong> once.</p></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer><div class="footer-inner"><p>Python’s standard library gives you useful tools without installing extra packages.</p></div></footer>
+</body>
+</html>

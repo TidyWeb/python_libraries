@@ -1,6 +1,6 @@
 # Python Standard Library Guide
 
-## [🌐 Open the live site: https://tidyweb.github.io/python_libraries/ ↗](https://tidyweb.github.io/python_libraries/)
+### [Visit the live site ↗](https://tidyweb.github.io/python_libraries/)
 
 
 A beginner-friendly visual reference to useful modules included with Python, with import syntax, example calls, and plain-language explanations.
